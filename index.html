@@ -1,0 +1,243 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SikhoMarket</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: linear-gradient(to right, #0f0f0f, #1c1c1c);
+      color: #fff;
+    }
+    header {
+      background-color: #0d0d0d;
+      padding: 30px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 2px 8px rgba(255, 215, 0, 0.2);
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    .logo img {
+      width: 80px;
+    }
+    .logo-text h1 {
+      margin: 0;
+      font-size: 28px;
+      color: #FFD700;
+    }
+    .logo-text p {
+      margin: 2px 0 0;
+      font-style: italic;
+      font-size: 14px;
+      color: #aaa;
+    }
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+    nav a {
+      color: #FFD700;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #fff;
+    }
+    section {
+      padding: 40px 20px;
+      background-color: #1b1b1b;
+      margin: 20px auto;
+      border-radius: 10px;
+      width: 90%;
+      max-width: 900px;
+      box-shadow: 0 0 20px rgba(255,215,0,0.05);
+    }
+    h2 {
+      color: #FFA500;
+      margin-bottom: 15px;
+    }
+    ul {
+      line-height: 1.8;
+    }
+    .footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      background-color: #0d0d0d;
+      color: #666;
+    }
+    .whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 50px;
+      padding: 12px 20px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      transition: background-color 0.3s ease;
+    }
+    .whatsapp-button:hover {
+      background-color: #128C7E;
+    }
+    .testimonial {
+      margin-bottom: 20px;
+    }
+    .testimonial p {
+      font-style: italic;
+    }
+    .testimonial h4 {
+      margin-top: 5px;
+      color: #ccc;
+    }
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      margin-bottom: 20px;
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .payment-button {
+      display: inline-block;
+      margin-top: 20px;
+      background-color: #FFD700;
+      color: #000;
+      padding: 10px 20px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+    }
+    .payment-button:hover {
+      background-color: #e6b800;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 6px;
+      border: none;
+      font-size: 16px;
+    }
+    button.submit-btn {
+      background-color: #FFD700;
+      color: #000;
+      border: none;
+      padding: 10px 20px;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button.submit-btn:hover {
+      background-color: #e6b800;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="https://cdn.jsdelivr.net/gh/sumitthakur96/assets@main/sikho-market-logo.png" alt="Sikho Market Logo" />
+      <div class="logo-text">
+        <h1>SikhoMarket</h1>
+        <p>Only for Educational Purpose</p>
+      </div>
+    </div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#courses">Courses</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#video">Video</a>
+      <a href="#contact">Contact</a>
+      <a href="#register">Register</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>SikhoMarket is an initiative to educate individuals about stock market fundamentals, technical analysis, trading strategies, and more. We aim to build awareness and skills through simplified online and offline learning modules.</p>
+  </section>
+
+  <section id="courses">
+    <h2>Our Educational Courses</h2>
+    <ul>
+      <li><strong>Beginner Stock Market Course</strong> – Duration: 1 Month – Course Fee: ₹2,999</li>
+      <li><strong>Intraday Trading Techniques</strong> – Duration: 1.5 Months – Course Fee: ₹4,999</li>
+      <li><strong>Technical Analysis (Charting & Indicators)</strong> – Duration: 2 Months – Course Fee: ₹5,999</li>
+      <li><strong>Options Trading Course</strong> – Duration: 1.5 Months – Course Fee: ₹6,499</li>
+      <li><strong>Long Term Wealth Creation</strong> – Duration: 1 Month – Course Fee: ₹2,499</li>
+    </ul>
+    <p><em>Note: All courses are for learning and educational awareness only.</em></p>
+    <a href="https://buy.stripe.com/test_payment_link" target="_blank" class="payment-button">Pay Now</a>
+  </section>
+
+  <section id="testimonials">
+    <h2>What Our Students Say</h2>
+    <div class="testimonial">
+      <p>"SikhoMarket helped me understand the market from scratch. The mentor is awesome!"</p>
+      <h4>– Rajeev, Bhopal</h4>
+    </div>
+    <div class="testimonial">
+      <p>"Courses are well-structured and full of real examples. Highly recommended."</p>
+      <h4>– Sneha, Delhi</h4>
+    </div>
+  </section>
+
+  <section id="video">
+    <h2>Watch Our Intro Video</h2>
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <section id="register">
+    <h2>Register Now</h2>
+    <form action="#" method="POST">
+      <div class="form-group">
+        <input type="text" placeholder="Your Name" required />
+      </div>
+      <div class="form-group">
+        <input type="email" placeholder="Your Email" required />
+      </div>
+      <div class="form-group">
+        <input type="text" placeholder="Phone Number" required />
+      </div>
+      <div class="form-group">
+        <textarea placeholder="Your Message"></textarea>
+      </div>
+      <button class="submit-btn" type="submit">Submit</button>
+    </form>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Information</h2>
+    <p><strong>Phone:</strong> 6264272583</p>
+    <p><strong>Address:</strong> Jio Towers, 10th Floor, Building No. 221, Royal Park, Andheri Road Highway, Andheri, Mumbai, Maharashtra 400297</p>
+  </section>
+
+  <a class="whatsapp-button" href="https://wa.me/916264272583" target="_blank">Chat on WhatsApp</a>
+
+  <div class="footer">
+    © 2025 SikhoMarket. All rights reserved.
+  </div>
+</body>
+</html>
